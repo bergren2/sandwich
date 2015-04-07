@@ -1,0 +1,11 @@
+{
+  "name": "Sandwich",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bergren2/sandwich.git"
+  },
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
