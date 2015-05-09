@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  </head>
+  <body>
+    Check out the available boards below:
+    <ul>
+      <% boards.forEach(function (el, i, arr) { %>
+        <% if (el.match(/\.ejs$/)) { %>
+          <% var board = el.substr(0, el.length - 4) %>
+          <li><a href="boards/<%= board %>"><%= board %></a></li>
+        <% } %>
+      <% }); %>
+    </ul>
+  </body>
+</html>

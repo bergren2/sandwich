@@ -23,6 +23,9 @@ You should have the following minimally setup:
 
     $ node sandwich.js
 
+Boards are kept in the `views/boards` directory. You can commit your own board
+to the repo until we decide we want to do otherwise.
+
 ### License
 
 See LICENSE for details.
