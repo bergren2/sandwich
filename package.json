@@ -6,9 +6,11 @@
     "url": "git@github.com:bergren2/sandwich.git"
   },
   "dependencies": {
+    "config": "^1.20.1",
     "ejs": "^2.3.1",
     "ejs-mate": "^2.1.0",
     "express": "^4.12.3",
+    "express-ipfilter": "0.0.25",
     "serve-favicon": "^2.2.0"
   }
 }

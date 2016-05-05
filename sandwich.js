@@ -1,9 +1,12 @@
-var express = require('express');
-var engine  = require('ejs-mate');
-var favicon = require('serve-favicon');
-var fs      = require('fs');
+var express  = require('express');
+var ipfilter = require('express-ipfilter');
+var engine   = require('ejs-mate');
+var favicon  = require('serve-favicon');
+var fs       = require('fs');
+var config   = require('config');
 
 var app = express();
+app.use(ipfilter(config.get('ipWhitelist'), { mode: 'allow' }));
 
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
